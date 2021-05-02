@@ -24,4 +24,5 @@ workflows:
   deployment:
     jobs:
       - aws-eks/create-cluster:
+          context: dummy-helm
           cluster-name: my-eks-demo
